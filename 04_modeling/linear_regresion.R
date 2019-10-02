@@ -23,7 +23,7 @@ climate_tbl %>%
 table(climate_tbl$year)
 summary(climate_tbl)
 
-climate_tbl %>% 
+summary_tbl <- climate_tbl %>% 
 	gather(key, value,2:11) %>% 
 	summary_col_by_group(key, col = value)
 
